@@ -64,19 +64,14 @@ public class Teste {
 		atleta[4] = atleta5;
 		
 		for(Atleta listarAtleta: atleta){
+			
 			System.out.println("Nome: " + listarAtleta.getNome());
 			System.out.println("Idade: " + listarAtleta.getIdade());
 			System.out.println("Sexo: " + listarAtleta.getSexo());
 			System.out.println("Modalidade: " + listarAtleta.getModalidade().getNome());
 			System.out.println("Fama: " + listarAtleta.getFama());
 			System.out.println("");
-		
-			/*if(listarAtleta.getModalidade().getSalario_medio()){
-				
-			}*/
-		}
-		
-		
+		}	
 
 	}
 

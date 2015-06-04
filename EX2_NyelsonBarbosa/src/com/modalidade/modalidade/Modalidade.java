@@ -10,7 +10,6 @@ comentários nos métodos e membros de dados da classe a escolha pelos modificador
 public class Modalidade {
 	
 	private final int NUMERO_DE_MODALIDADES = 5;
-	//private static int contador = 0;
 	
 	private String nome;
 	private int salario_medio;
@@ -19,15 +18,8 @@ public class Modalidade {
 	
 	public void cadastrarModalidade(String nome, int salario_medio){
 		
-		//Modalidade modalidade = new Modalidade();
-		
-		//for(contador = 0; contador < NUMERO_DE_MODALIDADES; contador++){
-			
 			setNome(nome);
 			setSalario_medio(salario_medio);
-		
-			//listadeModalidades[contador] = modalidade;
-		//}
 	} 
 	
 	public String getNome() {

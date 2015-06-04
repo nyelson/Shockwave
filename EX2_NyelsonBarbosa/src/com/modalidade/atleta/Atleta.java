@@ -44,27 +44,13 @@ public class Atleta {
 		Atleta associarAtleta = new Atleta();
 		Modalidade associarModalidade = new Modalidade();
 		
-		//Atleta[] atletas = new Atleta[NUMERO_DE_ATLETAS];
-		
 		associarAtleta.getListadeAtletas();
 		associarModalidade.getListadeModalidades();
 		
 		for(contador = 0; contador < NUMERO_DE_ATLETAS; contador++){
 			associarAtleta.setModalidade(associarModalidade);
 			associarAtleta.getModalidade().getNome();
-			
-			/*if(associarAtleta.getModalidade().equals(associarModalidade.getNome())){
-				
-			}*/
-		}
-		
-		/*Atleta associarAtleta = new Atleta();
-		Modalidade associarModalidade = new Modalidade();
-		
-		Atleta[] associarAtleta = new Atleta[NUMERO_DE_ATLETAS];
-		associarModalidade(this.listadeAtletas, listadeModalidades);*/
-		
-			
+		}			
 	}
 	
 	public String getNome() {
