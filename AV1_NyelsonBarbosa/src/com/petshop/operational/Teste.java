@@ -52,18 +52,18 @@ public abstract class Teste {
 		loja.cadastrarCachorro(indice, nome, idade, sexo, raça, fofura);
 		indice++;
 		
-		nome = "Luisa";
+		nome = "Spocky";
 		idade = 4;
 		sexo = "Femea";
-		raça = "Poodle";
+		raça = "Golden Retriever";
 		fofura = 80;
 		loja.cadastrarCachorro(indice, nome, idade, sexo, raça, fofura);
 		indice++;
 		
-		nome = "Renan";
+		nome = "Peep";
 		idade = 24;
-		sexo = "Gay";
-		raça = "Poodle";
+		sexo = "Macho";
+		raça = "Yorkshire";
 		fofura = 90;
 		loja.cadastrarCachorro(indice, nome, idade, sexo, raça, fofura);
 		indice++;
@@ -76,12 +76,10 @@ public abstract class Teste {
 			System.out.println("Raça: " + cachorros.getRaça());
 			System.out.println("Fofura: " + cachorros.getFofura());
 			System.out.println(" ");			
-			
-		}
+		}		
 		
 		loja.animalMaisFofo(listadeCachorros);	
 		loja.desvioFofura(listadeCachorros);
-
 	}
 
 }

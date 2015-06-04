@@ -17,9 +17,6 @@ public class LojaDeAnimais {
 	private static int contador;
 	private static int contadorCachorro = 0;
 	
-	//private String nome;
-	//private String endereço;
-	
 	/*
 	 * 4. Crie o método "animalMaisFofo", que deve percorrer o vetor de cachorros e retornar o
 	 * elemento que possui o maior valor do atributo "fofura".
@@ -39,12 +36,6 @@ public class LojaDeAnimais {
 		System.out.println("Cachorro mais fofo: " + cachorro.getNome());		
 	}
 	
-	/*
-	 * media
-	 * -----
-	 * variança = valor - media
-	 * desvio = a soma das varianças ao quadrado / media
-	 */
 	public void desvioFofura(Cachorro[] desvio){
 		
 		int soma = 0;
@@ -89,8 +80,7 @@ public class LojaDeAnimais {
 		cachorros.setFofura(fofura);
 		
 		vetorCachorro[indiceVetor] = cachorros;
-		contadorCachorro++;
-		
+		contadorCachorro++;		
 	}
 
 	public Cachorro[] getVetorCachorro() {
