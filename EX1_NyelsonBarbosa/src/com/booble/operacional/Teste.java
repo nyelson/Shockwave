@@ -21,14 +21,11 @@ RETORNO do método "determinarPagamento".
 import com.booble.adm.RH;
 
 public class Teste {
-	
-	//private final static int NUMERO_DE_COLABORADORES = 3;
 
 	public static void main(String[] args) {
 		
 		FolhaDePagamento colaboradores = new FolhaDePagamento();
 		Colaborador[] listadeColaboradores = colaboradores.getVetorColaboladores();
-		//FolhaDePagamento[] listadeColaboradores = new FolhaDePagamento[NUMERO_DE_COLABORADORES];
 		
 		RH.exibirStatus();
 		System.out.println(" ");
@@ -74,28 +71,13 @@ public class Teste {
 			System.out.println("Idade: " + listarColaborador.getIdade());
 			System.out.println("Sexo: " + listarColaborador.getSexo());
 			System.out.println("Tipo de Contrato: " + listarColaborador.getTipo_de_contrato());
-			System.out.println("Carga Horaria: " + listarColaborador.getCarga_horaria());
+			System.out.println("Carga Horaria: " + listarColaborador.getCarga_horaria());	
+			System.out.println("Salario: " + RH.determinarPagamento(listarColaborador.getTipo_de_contrato()) * listarColaborador.getCarga_horaria());
 			System.out.println(" ");
+					
 		}
 		
 		RH.exibirStatus();
-		
-		
-		/*Colaborador colaborador1 = new Colaborador();
-		colaborador1.setNome("Nyelson");
-		colaborador1.setMatricula(2015);
-		colaborador1.setIdade(18);
-		colaborador1.setSexo("Masculino");
-		colaborador1.setTipo_de_contrato(3);
-		colaborador1.setCarga_horaria(20);
-		
-		
-		FolhaDePagamento colaborador2 = new FolhaDePagamento();
-		colaborador2.cadastrarColaborador(1, "Jerusa", 2013, 49, "Feminino", 1, 30);
-		
-		FolhaDePagamento colaborador3 = new FolhaDePagamento();
-		colaborador3.cadastrarColaborador(2, "Neilson", 2014, 40, "Masculino", 2, 25);	*/
-
 	}
 
 }

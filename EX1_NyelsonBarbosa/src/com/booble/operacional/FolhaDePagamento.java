@@ -18,7 +18,6 @@ package com.booble.operacional;
 public class FolhaDePagamento {
 	
 	private final int NUMERO_DE_COLABORADORES = 3;
-	private static int contador = 0;
 	
 	private int ano;
 	private int mes;
@@ -30,15 +29,6 @@ public class FolhaDePagamento {
 	 * que recebe todos os dados de um colaborador (ver item 3), cria um "Colaborador",
 	 * e o coloca no vetor de colaboradores. O índice do vetor onde o novo colaborador
 	 * deve ser posto também é recebido pelo método.
-	 */
-	
-	/*
-	 * private String nome;
-	private int matricula;
-	private int idade;
-	private String sexo;
-	private int tipo_de_contrato;
-	private int carga_horaria;
 	 */
 	
 	public int getAno() {
@@ -79,7 +69,6 @@ public class FolhaDePagamento {
 		colaborador.setCarga_horaria(carga_horaria);
 		
 		vetorColaboladores[indice] = colaborador;
-		contador++;
 	}
 
 }
